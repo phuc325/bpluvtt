@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just for You ❤️</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f9e1e1; /* Soft background color */
+            color: #333;
+        }
+        .hidden { display: none; }
+        h1 { color: #e63946; } /* Loving header color */
+    </style>
+</head>
+<body>
+    <h1>My Sweetheart, Can You Solve This Riddle?</h1>
+    <p>❤️ What has keys but can't open locks? ❤️</p>
+    <input type="text" id="answer" placeholder="Type your answer here">
+    <button onclick="checkAnswer()">Submit</button>
+    
+    <div id="image" class="hidden">
+        <h2>Congratulations, My Love! 🎉</h2>
+        <img src="path/to/your/image.jpg" alt="Surprise Image" />
+        <p>You make my heart sing! 💖</p>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('answer').value.toLowerCase();
+            if (answer === 'piano') {  // Update the answer as needed
+                document.getElementById('image').classList.remove('hidden');
+            } else {
+                alert('Keep trying, my love! 💕');
+            }
+        }
+    </script>
+</body>
+</html>
